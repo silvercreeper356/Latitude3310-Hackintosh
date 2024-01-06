@@ -1,7 +1,7 @@
 # Latitude3310-Hackintosh
 Fixes for specific issues when installing macOS on a Dell Latitude 3310
 
-Dell Latitude 3310: Hackintosh quirks
+#Dell Latitude 3310: Hackintosh quirks
 
 In order to install hackintosh, most of the hardware will work by 
 following the Dortania guide.
@@ -15,12 +15,12 @@ The MacBookPro15,2 SMBIOS is optimal here, especially for GPU patching.
 boot-args: debug=0x100 keepsyms=1 alcid=11
  igfxagdc=0 igfxblt msgbuf=1048576
 
-1. NVMe:
+##1. NVMe:
 Even with NVMeFix kext, make sure the SATA controller is set to AHCI mode 
 and not RAID mode. Even though there
 are no SATA devices installed, this still effects the NVMe SSD.
 
-2. Backlight:
+##2. Backlight:
 You may have to experiment with different solutions, but for me these 
 options worked.
 
@@ -30,7 +30,7 @@ In config.plist:
 DeviceProperties > Add > PciRoot(0x0)/Pci(0x2,0x0)
 Set enable-backlight-registers-fix (Data) to 01000000
 
-3. Trackpad:
+##3. Trackpad:
 This is not an I2C patching guide. If you don't understand, you should 
 look over trackpad patching with VoodooI2C. These values and
 configuration are used for this machine.
@@ -54,7 +54,7 @@ snapshot OC in propertree
 
 --vi2c-force-polling was NOT required in the boot args
 
-4. GPU Display Outputs:
+##4. GPU Display Outputs:
 This is not an iGPU patching guide. These are specific fixes which have 
 worked on this machine.
 If you don't undersand, follow guides for Whatevergreen iGPU, Framebuffer, 
@@ -84,7 +84,7 @@ Your DeviceProperties section should look like this when you are done:
 If everything is done right, you should be able to use displays with HDMI and DisplayPort over the Type-C port.
 
 
-5. FileVault:
+##5. FileVault:
 FileVault can be enabled by following Dortania post-install guide for 
 FileVault, and then can be enabled from within
 macOS settings. The only issue is that this causes the time for it to ask 
