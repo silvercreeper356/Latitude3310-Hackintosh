@@ -42,7 +42,7 @@ These are my current boot-args for Ventura:
 ## 1. NVMe:
 Even with NVMeFix kext, make sure the SATA controller is set to AHCI mode 
 and not RAID mode. Even though there
-are no SATA devices installed, this still effects the NVMe SSD.
+are no SATA devices installed, this still affects the NVMe SSD.
 
 ## 2. Backlight:
 You may have to experiment with different solutions, but for me these 
