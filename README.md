@@ -29,6 +29,16 @@ These are my current boot-args for Ventura:
 
 # Fixes:
 
+ [1: NVMe](https://github.com/silvercreeper356/Latitude3310-Hackintosh#1-nvme)
+ 
+ [2: Backlight](https://github.com/silvercreeper356/Latitude3310-Hackintosh#2-backlight)
+ 
+ [3: Trackpad](https://github.com/silvercreeper356/Latitude3310-Hackintosh#3-trackpad)
+ 
+ [4: GPU Display Patching](https://github.com/silvercreeper356/Latitude3310-Hackintosh#4-gpu-display-patching)
+ 
+ [5: FileVault Speed](https://github.com/silvercreeper356/Latitude3310-Hackintosh#5-filevault-speed)
+
 ## 1. NVMe:
 Even with NVMeFix kext, make sure the SATA controller is set to AHCI mode 
 and not RAID mode. Even though there
@@ -68,7 +78,7 @@ snapshot OC in propertree
 
 `--vi2c-force-polling` was NOT required in the boot args
 
-## 4. GPU Display Outputs:
+## 4. GPU Display Patching:
 This is not an iGPU patching guide. These are specific fixes which have 
 worked on this machine.
 If you don't undersand, follow guides for Whatevergreen iGPU, Framebuffer, 
@@ -100,7 +110,7 @@ Your DeviceProperties section should look like this when you are done:
 If everything is done right, you should be able to use displays with HDMI and DisplayPort over the Type-C port.
 
 
-## 5. FileVault:
+## 5. FileVault Speed:
 FileVault can be enabled by following Dortania post-install guide for 
 FileVault, and then can be enabled from within
 macOS settings. The only issue is that this causes the time for it to ask 
