@@ -1,7 +1,7 @@
 # Latitude3310-Hackintosh
 Fixes for specific issues when installing macOS on a Dell Latitude 3310
 
-#Dell Latitude 3310: Hackintosh quirks
+# Dell Latitude 3310: Hackintosh quirks
 
 In order to install hackintosh, most of the hardware will work by 
 following the Dortania guide.
