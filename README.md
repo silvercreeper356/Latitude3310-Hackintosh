@@ -9,6 +9,8 @@ following the Dortania guide.
 There are 5 main quirks with this machine, of which I've figured out for 
 you and documented here.
 
+**Important: These fixes may be specific to the i5-8265U (UHD 620) configuration. Other configurations will probably work with some modifications.**
+
 Thanks to the /r/Hackintosh Paradise Discord for their help. The Trackpad 
 and GPU fixes wouldn't have been
 possible without them.
